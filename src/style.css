@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Active menu item */
+li.current-menu-item > a,
+li.current_page_item > a {
+  color: #2563eb;
+  font-weight: 600;
+
+}
+li a {
+  position: relative;
+  text-decoration: none;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms;
+  background: #2563eb;
+}
+
+li a:hover::after,
+li.current-menu-item > a::after,
+li.current_page_item > a::after {
+  transform: scaleX(1);
+}
+
+#menu li.current-menu-item > a,
+#menu li.current_page_item > a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
