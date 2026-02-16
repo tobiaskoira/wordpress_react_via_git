@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+outline: 5px solid red;
+}
 /* Active menu item */
 li.current-menu-item > a,
 li.current_page_item > a {
@@ -53,4 +55,29 @@ li.current_page_item > a::after {
     font-size: 2rem;
     
 }
+}
+.wpcf7 .cf7-submit,
+.wpcf7 input.wpcf7-submit {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #2563eb;
+  cursor: pointer;margin-top: 2em;
+}
+
+.wpcf7 .cf7-submit:hover,
+.wpcf7 input.wpcf7-submit:hover {
+  background-color: #1d4ed8;
+}
+
+.wpcf7 .cf7-submit:focus,
+.wpcf7 input.wpcf7-submit:focus {
+  box-shadow: 0 0 0 4px #93c5fd;
 }

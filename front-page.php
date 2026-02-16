@@ -95,6 +95,21 @@ style="background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/c
     </div>
 </section>
 
+<section class="py-4">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+        Contact Me
+      </h2>
+
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        Got a technical issue? Let us know.
+      </p>
+<div class="space-y-8"><?php echo do_shortcode('[contact-form-7 id="2e86f6e" title="Conact Form_mainpage"]'); ?></div>
+      
+
+  </div>
+</section>
 
 </main>
 <div id="accordion-react-root" class="site-main"></div>
