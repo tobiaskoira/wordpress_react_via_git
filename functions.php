@@ -35,31 +35,24 @@ add_action('wp_enqueue_scripts', function () {
   $entry = $manifest['src/main.jsx'] ?? null;
   if (!$entry) return;
 
-  wp_enqueue_script(
-    'theme-vite',
-    $theme_uri . '/dist/' . $entry['file'],
-    [],
-    null,
-    true
-  );
-wp_enqueue_scripts(
-  'flowbite',
-  get_template_directory_uri() . '/node_modules/flowbite/dist/flowbite.min.js',
+wp_enqueue_script(
+  'theme-vite',
+  $theme_uri . '/dist/' . $entry['file'],
   [],
   null,
   true
+);
 
-);  )
-  if (!empty($entry['css'])) {
-    foreach ($entry['css'] as $i => $css_file) {
-      wp_enqueue_style(
-        'theme-vite-' . $i,
-        $theme_uri . '/dist/' . $css_file,
-        [],
-        null
-      );
-    }
+if (!empty($entry['css'])) {
+  foreach ($entry['css'] as $i => $css_file) {
+    wp_enqueue_style(
+      'theme-vite-' . $i,
+      $theme_uri . '/dist/' . $css_file,
+      [],
+      null
+    );
   }
+}
 });
 
 
