@@ -42,7 +42,14 @@ add_action('wp_enqueue_scripts', function () {
     null,
     true
   );
+wp_enqueue_scripts(
+  'flowbite',
+  get_template_directory_uri() . '/node_modules/flowbite/dist/flowbite.min.js',
+  [],
+  null,
+  true
 
+);  )
   if (!empty($entry['css'])) {
     foreach ($entry['css'] as $i => $css_file) {
       wp_enqueue_style(

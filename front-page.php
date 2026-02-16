@@ -104,6 +104,6 @@ style="background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/c
 git add front-page.php 
 git commit -m "Add contact form shortcode to front page" 
 git push 
-На сервере (SSH в папке темы): git pull*/  
+На сервере (SSH в папке темы): git pull*/  or git pull --rebase origin main
 
 
