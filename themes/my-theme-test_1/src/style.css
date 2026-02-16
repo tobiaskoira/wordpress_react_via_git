@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+outline: 5px solid red;
+}
+/* Active menu item */
+li.current-menu-item > a,
+li.current_page_item > a {
+  color: #2563eb;
+  font-weight: 600;
+
+}
+li a {
+  position: relative;
+  text-decoration: none;
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms;
+  background: #2563eb;
+}
+
+li a:hover::after,
+li.current-menu-item > a::after,
+li.current_page_item > a::after {
+  transform: scaleX(1);
+}
+
+#menu li.current-menu-item > a,
+#menu li.current_page_item > a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+
+.wp-block-heading.hero-cover {
+  font-size: 3rem;
+  line-height: 1.25;
+  margin-top: 1.5em;
+
+ 
+}
+@media screen and (max-width: 768px) {
+  .wp-block-heading.hero-cover {
+    font-size: 2rem;
+    
+}
+}
+.wpcf7 .cf7-submit,
+.wpcf7 input.wpcf7-submit {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #2563eb;
+  cursor: pointer;margin-top: 2em;
+}
+
+.wpcf7 .cf7-submit:hover,
+.wpcf7 input.wpcf7-submit:hover {
+  background-color: #1d4ed8;
+}
+
+.wpcf7 .cf7-submit:focus,
+.wpcf7 input.wpcf7-submit:focus {
+  box-shadow: 0 0 0 4px #93c5fd;
+}
