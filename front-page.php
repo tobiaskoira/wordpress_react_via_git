@@ -7,7 +7,7 @@
 
 
 
-<section class="py-4">
+<section class="py-4 wp-content">
                 <?php
         if ( have_posts() ) :
             while ( have_posts() ) :
@@ -22,7 +22,7 @@
     
 </section>
    
-<section class="py-4">
+<!-- <section class="py-4">
 
 
     <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
@@ -71,7 +71,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
 <section class="py-4">
     <div id="react-posts-filtering"></div>
@@ -99,4 +99,11 @@ style="background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/c
 </main>
 <div id="accordion-react-root" class="site-main"></div>
 <?php get_footer(); ?>
+
+/*
+git add front-page.php 
+git commit -m "Add contact form shortcode to front page" 
+git push 
+На сервере (SSH в папке темы): git pull*/  
+
 

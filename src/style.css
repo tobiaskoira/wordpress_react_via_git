@@ -40,3 +40,17 @@ li.current_page_item > a::after {
   font-weight: 600;
 }
 
+
+.wp-block-heading.hero-cover {
+  font-size: 3rem;
+  line-height: 1.25;
+  margin-top: 1.5em;
+
+ 
+}
+@media screen and (max-width: 768px) {
+  .wp-block-heading.hero-cover {
+    font-size: 2rem;
+    
+}
+}
