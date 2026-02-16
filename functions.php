@@ -25,7 +25,13 @@ add_action('wp_enqueue_scripts', function () {
     null,
     true
   );
-
+  wp_enqueue_script(
+    'flowbite_production',
+    $theme_uri . '/assets/vendor/flowbite.min.js',
+    [],
+    null,
+    true
+  );
   // Vite build (React + Tailwind CSS)
   $manifest_path = $theme_dir . '/dist/.vite/manifest.json';
 
