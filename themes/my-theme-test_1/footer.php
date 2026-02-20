@@ -1,4 +1,4 @@
-	<?php wp_footer(); ?>
+
 	
 
 <footer class="bg-neutral-primary-soft rounded-base shadow-xs border border-default m-4">
@@ -29,6 +29,6 @@
 </footer>
 
 
-
+<?php wp_footer(); ?>
 </body>
 </html>
