@@ -105,7 +105,7 @@ style="background-image: url('https://flowbite.s3.amazonaws.com/docs/jumbotron/c
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
         Got a technical issue? Let us know.
       </p>
-<div class="space-y-8"><?php echo do_shortcode('[contact-form-7 id="2e86f6e" title="Conact Form_mainpage"]'); ?></div>
+<div class="space-y-8"><?php echo do_shortcode('[contact-form-7 id="6417eb6" title="Contact form 1"]'); ?></div>
       
 
   </div>
